@@ -1,0 +1,485 @@
+commit b5e7d2e2ec816b4698a607d3aaa5ff85d4c91981
+Author: sdarwin <samuel.d.darwin@gmail.com>
+Date:   Fri May 29 19:58:21 2020 +0000
+
+    build docs in travis
+
+commit fef02e0d287b3f598418f6079a8f347889df9310
+Author: Miguel Portilla <miguelportilla@pobros.com>
+Date:   Wed Jun 19 14:42:04 2019 -0400
+
+    Set version to 2.0.2
+
+commit d9950b7876ba7e73951ca6ee851b0269884c278e
+Author: Miguel Portilla <miguelportilla@pobros.com>
+Date:   Wed Jun 19 15:21:07 2019 -0400
+
+    Force Travis Homebrew update as build error workaround
+
+commit 2520aee8d3af6aabc300505f2015885c6d39d0dc
+Author: Mo Morsi <mo@morsi.org>
+Date:   Wed Jun 19 14:05:56 2019 -0400
+
+    Define error::success so that error_codes exhibit proper 'truthiness'
+    
+    Right now if ec is assigned to key_not_found and then tested in a
+    conditional, the error code will not evaluate properly. This is
+    because key_not_found currently is set to 0 (first enum value).
+    
+    Includes a 'success' error code similar to that defined in
+    boost::system:
+    
+    https://www.boost.org/doc/libs/1_61_0/boost/system/error_code.hpp
+
+commit 79c1dcaec8aa54d93979fb56c66ab4d925eda29c
+Author: Miguel Portilla <miguelportilla@pobros.com>
+Date:   Thu May 23 15:11:01 2019 -0400
+
+    Set version to 2.0.1
+
+commit 060499e6f0da5e0157aed7daf9917f6d18c878e8
+Author: Miguel Portilla <miguelportilla@pobros.com>
+Date:   Thu May 23 14:07:55 2019 -0400
+
+    Boost 1.69 or later is required
+
+commit 2186f82d275937e6e528c6deb03b1d0e95efaa67
+Author: Miguel Portilla <miguelportilla@pobros.com>
+Date:   Thu May 23 14:06:14 2019 -0400
+
+    Fix insertion rate limit
+
+commit 072cedb8f2318d02ba04430d412396495e20cc4b
+Author: Kevin Stubbs <kevin.stubbs@live.com>
+Date:   Fri Oct 27 13:47:14 2017 -0700
+
+    Fix 'licence' typo in readme.
+
+commit dc3e98c0740865a4de130500157412981df90abf
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Thu Apr 4 14:35:48 2019 -0700
+
+    Set version to 2.0.0
+
+commit edc5ace056ad6a9387320ad9321ea0efc9b95f01
+Author: Miguel Portilla <miguelportilla@pobros.com>
+Date:   Fri Feb 15 17:53:11 2019 -0500
+
+    Add context unit test
+
+commit 01ce1f16d2e5a7444b532e95b42291e1e053e09b
+Author: Miguel Portilla <miguelportilla@pobros.com>
+Date:   Fri Jan 25 20:04:30 2019 -0500
+
+    Add thread management context class
+
+commit 766d088b4dd748f89ac8a8cc857833f5a073c117
+Author: Mike Ellery <mellery451@gmail.com>
+Date:   Wed Feb 20 20:19:13 2019 -0800
+
+    Modernize the CMake build:
+    
+    * switch to targets/properties in cmake
+    * add install/export target for Nudb core
+    * update travis build with more variants
+    * build rocksdb/snappy using ExternalProject instead of directly
+      compiling submoduled sources
+
+commit 0965ae1b8c1bb85932cd6a4affa1852541c4bb7b
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Tue Jan 22 07:59:18 2019 -0800
+
+    Update build scripts and project layout
+
+commit 98c48fbabb17e009d9327f213b114dbfadd32652
+Author: Miguel Portilla <miguelportilla@pobros.com>
+Date:   Fri Jan 18 17:55:05 2019 -0500
+
+    Update README.md
+    
+    Updated minimum boost library version required.
+
+commit 6b4779f737d72038c716d0ecbc0701411dff083e
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Tue May 2 11:17:10 2017 -0700
+
+    Set version to 1.0.2
+
+commit d7c636e2fb88c391493dca4939f5ff053d0226d8
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Tue May 2 11:49:08 2017 -0700
+
+    Update Travis to Boost 1.61.0
+
+commit 4ce7f51d050d8cb6a81599b32c4513c5e090c2b0
+Author: MarkusTeufelberger <markusteufelberger@gmail.com>
+Date:   Mon Oct 24 20:19:04 2016 +0200
+
+    Fix typo in nudb tool
+
+commit 5290618c863d08ad6adb91ca7ac228cbf955291e
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Tue May 2 11:16:07 2017 -0700
+
+    Remove error::success (API Change)
+    
+    fix #55
+
+commit 5a307e4aed9b81fede3f817a6791ecb1ec851174
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Tue May 2 11:15:50 2017 -0700
+
+    Better CMakeLists.txt for finding Boost
+
+commit caa3866d1baf39db6fdd2d22094ac8867aa05e1a
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Mon Mar 27 16:04:55 2017 -0400
+
+    Set version to 1.0.1
+
+commit fbd7b3c46972462e17d8b4538a4f6f93e4c309c9
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Mon Mar 27 15:47:33 2017 -0400
+
+    Travis: Limit the number of jobs
+
+commit da09745d7b3fb91a642c2fa5b59b6d4850acaf46
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Tue Mar 21 15:56:40 2017 -0400
+
+    Set version to 1.0.0
+
+commit fec144ee3f622977c2b8c13f552569f1549184ba
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Tue Mar 21 15:55:08 2017 -0400
+
+    Fix badge markdown in README.md
+
+commit 95824421c07b198159b809059f417a24994659bc
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Tue Oct 4 15:47:48 2016 -0400
+
+    Set version to 1.0.0-b7
+
+commit 51fd2f22c95135fb4df4818d3e68caea8cdbccc6
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Tue Oct 4 15:47:39 2016 -0400
+
+    Improve file creation on POSIX
+
+commit b5b9cd236251896fffacfc31c22b235dbd15608d
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Tue Oct 4 14:26:35 2016 -0400
+
+    Fix doc typos
+
+commit 00adc6a4f16679a376f40c967f77dfa544c179c1
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Wed Sep 28 11:29:44 2016 -0400
+
+    Set version to 1.0.0-b6
+
+commit 484fa492802999620a96aa9823c7e244e9d44afe
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Wed Sep 28 10:11:44 2016 -0400
+
+    Fix incorrect file deletion in create()
+
+commit 40841eba177565e260e3c275943fca6e09dc7340
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Tue Sep 27 13:28:17 2016 -0400
+
+    Tidy up docs:
+    
+    Brings in the docca C++ doc stylesheet library in as a git submodule.
+
+commit 8ab837658d8192804afdf08b9c57844820253af9
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Thu Sep 8 14:54:11 2016 -0400
+
+    Set version to 1.0.0-b5
+
+commit 95a9f01845274a382a68aa4dd88651799cf49323
+Author: seelabs <scott.determan@yahoo.com>
+Date:   Wed Sep 7 12:01:57 2016 -0400
+
+    Benchmark in batches:
+    
+    The bench program was changed to do timing in batches. A set of values
+    is inserted, then a set of values are fetched. There were also several
+    new command line options added to the bench program (see the README.md)
+    and the python plot script was simplified.
+
+commit ce5c858ac10e224220a0e29d92d8eed9ea2585ce
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Tue Sep 6 11:20:26 2016 -0400
+
+    Update documentation
+
+commit 7194813907dc10980d9dd41a3c0576698e77e517
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Wed Sep 7 22:23:01 2016 -0400
+
+    Improved commit process:
+    
+    The commit process runs every second and measures the rate,
+    dynamically adjusting the insertion limit to prevent
+    unbounded growth of the pool and cache.
+
+commit 90117d58f72ddd7132106347c091c2f9ae104d96
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Wed Sep 7 21:35:14 2016 -0400
+
+    Dynamic block size for custom allocator (API change):
+    
+    This changes the internal arena allocator to dynamically adjust
+    the block size based on the allocation throughput. It removes
+    the requirement that callers specify the alloc size.
+    
+    Public interfaces that previously required an allocation size
+    hint, now no longer require the hint. It is sufficient to simply
+    delete the parameter from call sites.
+
+commit 1f9d3807d83596097ac8aeff646714097d1cdde0
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Tue Sep 6 09:37:16 2016 -0400
+
+    Demote exceptions to asserts in gentex
+
+commit f5c947a5f8510aab10e28b32a3934cfc7f107725
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Sun Sep 4 18:07:06 2016 -0400
+
+    Clean up images:
+    
+    * Fix kerning
+    * Lighter stroke
+
+commit fa63afa268a643692515a90c76c0e9f44c4a8afd
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Sat Sep 3 13:55:58 2016 -0400
+
+    Update docs
+
+commit abd1e4c61b13819b5a0fcd479e5fc0ed5674f8a1
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Sat Sep 3 10:39:39 2016 -0400
+
+    Add is_File concept and checks
+
+commit 580ec0583d239e1849fbdd201b10ca5f5ae3f1b0
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Sat Sep 3 10:11:22 2016 -0400
+
+    Add buffer unit test
+
+commit 9493a7a81537fe4e0fb4665d23c915750b0c7826
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Sat Sep 3 10:01:41 2016 -0400
+
+    Increase coverage
+
+commit e62dac759ab61fe391c451a31b1113bd6254d499
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Sat Sep 3 09:31:25 2016 -0400
+
+    fail_file also fails on reads
+
+commit a5833ab8e6c2fe5d5ceeafe1629430e1f5deeea0
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Sat Sep 3 09:29:08 2016 -0400
+
+    Fix bug in rekey where an error wasn't checked
+
+commit 4bb090cc191ba719351a75fb846329f77cb0d83c
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Tue Aug 30 17:06:24 2016 -0400
+
+    Set version to 1.0.0-b4
+
+commit f20d3334eeb91713d5ad9386fd78fec4e14ed764
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Wed Aug 31 16:42:18 2016 -0400
+
+    Use BOOST_ASSERT instead of assert
+
+commit ce15c8dc902dacd6ed20dac557ba2141116321de
+Author: seelabs <scott.determan@yahoo.com>
+Date:   Tue Aug 30 13:50:10 2016 -0400
+
+    Benchmark fetch and insert:
+    
+    These benchmarks time two operations:
+    
+    1. The time to insert N values into a data base. The inserted keys and
+       values are pseudo-randomly generated. The random number generator is
+       always seeded with the same value for each run, so the same values
+       are always inserted.
+    
+    2. The time to fetch M existing values from a data base with N values.
+       The order that the keys are fetched are pseudo-randomly generated.
+       The random number generator is always seeded with the same value on
+       each fun, so the keys are always looked up in the same order.
+
+commit 0915876185ef9e6223fd41896b3ad5c70cd5e169
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Mon Aug 29 17:08:11 2016 -0400
+
+    Improved test coverage:
+    
+    * Refine basic_store tests
+    * Move verify tests into verify.cpp
+    * Add additional API tests
+
+commit ce3e0c51948d78a63215ee5e90c7d781227b8b42
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Mon Aug 29 16:55:12 2016 -0400
+
+    Update extras/beast to 1.0.0-b12
+
+commit 1606d20ceb10d2cbfacd708e2e9813f16418f706
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Mon Aug 29 16:27:18 2016 -0400
+
+    Throw on API calls when no database open
+
+commit 62a8f83c40ee1fcb95ef6ea05711e68855bb4957
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Fri Sep 2 11:30:15 2016 -0400
+
+    Remove bin and bin64 directories:
+    
+    These directories are removed, to make it easier for developers
+    to delete the entire directory contents when rebuilding CMake
+    targets after a configuration change.
+
+commit ec9947bcd195a4f0cc77b33fa7e90be16fbfd8c2
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Mon Aug 29 10:22:29 2016 -0400
+
+    Use errors instead of returning bool from insert, fetch:
+    
+    This is an API change. insert and fetch set  error::key_exists
+    and error::key_not_found respectively. The return type is
+    now void.
+
+commit 0464b12ffb79f0f88695e2bad11df907bec230f9
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Mon Aug 29 09:07:15 2016 -0400
+
+    Use master branch for codecov badge
+
+commit 64814a4aa58c8cbfee1eec9947bfeb683ec877a8
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Mon Aug 29 07:53:54 2016 -0400
+
+    Set version to 1.0.0-b3
+
+commit 1d023a69fce46940b8697160bf4cabfaaa8378c8
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Sun Aug 28 17:41:22 2016 -0400
+
+    Update Beast submodule to 1.0.0-b11
+
+commit da45df4fc454abc0b99829e15d63d484e691ef9e
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Sun Aug 28 17:31:09 2016 -0400
+
+    More coverage for basic_store, errors
+
+commit 514032fbe213a1132eeb27a17cf2ee36f7ac3952
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Sun Aug 28 17:21:22 2016 -0400
+
+    Use a smaller buffer in the rekey test:
+    
+    This increases code coverage.
+
+commit df8d68b9aa2f7336f2a5d4e8fd4e9822dbee2cc8
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Sun Aug 28 16:53:55 2016 -0400
+
+    Add visit test
+
+commit 43dfeba394d94fbf2fa9e7c50aa85bacfb45e1fc
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Sun Aug 28 10:10:01 2016 -0400
+
+    Fix handling of short reads and writes:
+    
+    Write no longer fails on POSIX when trying to write 2GB
+    or more at a time. The short_write error code is removed.
+
+commit 68e9c2df42ae5a10e938f4005bb96c3cc15421f3
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Sat Aug 27 19:35:51 2016 -0400
+
+    Add Boost library link requirements
+
+commit bfaf2a8e52348ff3e5e5abc53af18ecd537b61f7
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Sat Aug 27 19:03:43 2016 -0400
+
+    Tune buffer sizes for performance
+
+commit 1fca0e521d4ea61367ff307dc6860e97c545161e
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Sat Aug 27 18:47:25 2016 -0400
+
+    Tidy up progress indicator
+
+commit 6c871975d91f6b93da82ae22ebfcb0c2199b7273
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Sat Aug 27 16:41:46 2016 -0400
+
+    Set version to 1.0.0-b2
+
+commit 5a92ad489f922c326bff6f2fed6cb93532e98160
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Sat Aug 27 15:59:19 2016 -0400
+
+    Add missing header to build script
+
+commit dc2a5b99bd3a392a04ef67f9c64f1dffcf91f703
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Fri Aug 26 15:26:48 2016 -0400
+
+    Update README:
+    
+    Explain the git submodule requirement
+
+commit a6facf5f849df2434d798e64457143ede805856c
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Fri Aug 26 15:16:02 2016 -0400
+
+    Add CHANGELOG
+
+commit 6d8cf5acde8de0c3de9c1a67674ae3c3d6638b0c
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Fri Aug 26 13:41:52 2016 -0400
+
+    Set version to 1.0.0-b1
+
+commit e34b4058fe56cd87832ed78f38765b20acbd7986
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Wed Aug 24 15:25:57 2016 -0400
+
+    Add documentation
+
+commit 27b3330f2a10307a871ca9b8175cae88254d7a17
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Mon Feb 1 08:14:26 2016 -0500
+
+    Import initial NuDB source tree:
+    
+    This squashes all of the work that was done before the first
+    public release, including contributions from:
+    
+        Vinnie Falco
+        Scott Determan
+
+commit 996ab811b87ae8f4c5b7d8ae5c675e1a7956fda5
+Author: Vinnie Falco <vinnie.falco@gmail.com>
+Date:   Wed Aug 24 13:55:46 2016 -0400
+
+    Initial commit
