@@ -470,3 +470,4 @@ http://www.boost.org/LICENSE_1_0.txt)
 
 Please report issues or questions here:
 https://github.com/vinniefalco/NuDB/issues
+ 
